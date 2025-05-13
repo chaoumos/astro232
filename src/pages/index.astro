@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to vvvbnbnnvc">
+	<main>
+		<h1 class="text-4xl font-bold mb-4">Welcome to <span class="text-gradient">vvvbnbnnvc</span>!</h1>
+		<p class="instructions">
+			To get started, open the sidebar and browse around. You can find this page in <code>src/pages/index.astro</code>.
+		</p>
+		<p>
+      This is a basic Astro site. Check out the <a href="/blog">blog section</a> or start adding your own content!
+    </p>
+	</main>
+</Layout>
+<style>
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 700;
+    line-height: 1.2;
+		margin-bottom: 1.5rem;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+</style>
